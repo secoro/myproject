@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Hippo Essentials Plugins Dashboard
+Implementation-Version: 13.4.0
+Built-By: abanck
+Implementation-Vendor-Id: org.onehippo.cms7
+Created-By: Apache Maven 3.6.2
+Build-Jdk: 1.8.0_201
+Implementation-URL: https://www.onehippo.org/hippo-cms7-release/hippo-
+ essentials/hippo-essentials-dashboard/
+Implementation-Vendor: Hippo B.V. (http://www.onehippo.com)
+

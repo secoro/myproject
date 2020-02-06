@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['clean install']
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['-P docker.build', '--tag=gcr.io/$PROJECT_ID/myproject-image', '.']
+images: ['gcr.io/$PROJECT_ID/myproject-image']
