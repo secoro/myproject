@@ -1,6 +1,13 @@
 steps:
 - name: 'gcr.io/cloud-builders/mvn'
-  args: ['clean install']
+  entrypoint: bash
+  args: ['./scripts/build.bash']
+  volumes:
+    - name: 'war'
+      path: /war
 - name: 'gcr.io/cloud-builders/mvn'
-  args: ['-P docker.build', '--tag=gcr.io/$PROJECT_ID/myproject-image', '.']
+  args: ['-P', 'docker.build']
+  volumes:
+    - name: 'war'
+      path: /war
 images: ['gcr.io/$PROJECT_ID/myproject-image']
