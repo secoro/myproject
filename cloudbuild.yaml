@@ -7,7 +7,7 @@ steps:
            'org.example/myproject:0.1.0-SNAPSHOT',
            'gcr.io/$PROJECT_ID/showcase-dxt-image:newtag']
   - name: 'gcr.io/cloud-builders/kubectl'
-    args: ['set', 'image', 'deployment/showcase-dxt-deployment', 'showcase-dxt-image=gcr.io/$PROJECT_ID/showcase-dxt-:newtag']
+    args: ['set', 'image', 'deployment/showcase-dxt-deployment', 'showcase-dxt-image=gcr.io/$PROJECT_ID/showcase-dxt-image:newtag']
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=europe-west4-c'
       - 'CLOUDSDK_CONTAINER_CLUSTER=showcase-dxt-cluster'
