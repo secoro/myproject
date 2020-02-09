@@ -1,0 +1,23 @@
+# IntelliJ
+.idea/
+**/*.iml
+**/overlays
+*.ipr
+*.iws
+out/
+overlays/
+atlassian-ide-plugin.xml
+
+# Eclipse
+**/.project
+**/.classpath
+**/.settings
+
+# Maven
+**/target
+**/storage
+
+## OSX
+.DS_Store
+.AppleDouble
+.LSOverride
