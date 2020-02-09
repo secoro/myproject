@@ -1,13 +1,16 @@
 steps:
-- name: 'gcr.io/cloud-builders/mvn'
-  entrypoint: bash
-  args: ['./scripts/build.bash']
-  volumes:
-    - name: 'war'
-      path: /war
-- name: 'gcr.io/cloud-builders/mvn'
-  args: ['-P', 'docker.build']
-  volumes:
-    - name: 'war'
-      path: /war
-images: ['gcr.io/$PROJECT_ID/myproject-image']
+  - name: 'gcr.io/cloud-builders/mvn'
+    entrypoint: bash
+    args: ['./scripts/build.bash']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['tag',
+           'org.example/myproject:0.1.0-SNAPSHOT',
+           'gcr.io/$PROJECT_ID/showcase-dxt-image:newtag']
+  - name: 'gcr.io/cloud-builders/kubectl'
+    args: ['set', 'image', 'deployment/showcase-dxt-deployment', 'showcase-dxt-image=gcr.io/$PROJECT_ID/showcase-dxt-:newtag']
+    env:
+      - 'CLOUDSDK_COMPUTE_ZONE=europe-west4-c'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=showcase-dxt-cluster'
+options:
+  machineType: 'N1_HIGHCPU_8'
+images: ['gcr.io/$PROJECT_ID/showcase-dxt-image']
