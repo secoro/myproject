@@ -22,7 +22,7 @@
 #
 
 # Repository configurations
-REP_OPTS="-Drepo.path=${REPO_PATH} -Drepo.bootstrap=${REPO_BOOTSTRAP} -Drepo.config=${REPO_CONFIG} -Drepo.autoexport.allowed=${REPO_AUTOEXPORT_ALLOWED}"
+REP_OPTS="-Drepo.path=${REPO_PATH} -Drepo.bootstrap=true -Drepo.config=${REPO_CONFIG} -Drepo.autoexport.allowed=${REPO_AUTOEXPORT_ALLOWED}"
 
 # Logging configurations
 L4J_OPTS="-Dlog4j.configurationFile=file://${CATALINA_HOME}/conf/log4j2.xml -DLog4jContextSelector=org.apache.logging.log4j.core.selector.BasicContextSelector"
