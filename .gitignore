@@ -15,7 +15,6 @@ atlassian-ide-plugin.xml
 
 # Maven
 **/target
-**/storage
 
 ## OSX
 .DS_Store

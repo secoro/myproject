@@ -1,4 +1,4 @@
 definitions:
   config:
-    /hst:platform/hst:hosts/dev-localhost/34.90.173.210:
+    /hst:platform/hst:hosts/dev-localhost/localhost:
       .meta:delete: true
