@@ -1,2 +1,2 @@
-mvn -T 4 install
+mvn verify
 mvn -P docker.build
