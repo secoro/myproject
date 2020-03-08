@@ -1,8 +1,0 @@
-definitions:
-  config:
-    /hst:platform/hst:hosts/dev-localhost/34.90.173.210:
-      jcr:primaryType: hst:virtualhost
-      /hst:root:
-        jcr:primaryType: hst:mount
-        hst:ismapped: false
-        hst:namedpipeline: WebApplicationInvokingPipeline
