@@ -1,1 +1,4 @@
+org/example/beans/NewsDocument.class
+org/example/beans/ContentDocument.class
 org/example/beans/BaseDocument.class
+org/example/beans/Banner.class

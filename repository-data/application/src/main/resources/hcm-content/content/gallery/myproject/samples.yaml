@@ -1,0 +1,93 @@
+/content/gallery/myproject/samples:
+  jcr:primaryType: hippogallery:stdImageGallery
+  jcr:mixinTypes: ['mix:referenceable']
+  jcr:uuid: 3e3f8d30-4c88-4d3c-86f7-ff43bebeeeec
+  hippostd:foldertype: [new-image-folder]
+  hippostd:gallerytype: ['hippogallery:imageset']
+  /viognier-grapes-188185_640.jpg:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: beff458e-e07a-4065-8cad-8d96b67d13ec
+    /viognier-grapes-188185_640.jpg:
+      jcr:primaryType: hippogallery:imageset
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: e649b2b1-b5af-455e-b3f8-9b898365ab50
+      hippo:availability: [live, preview]
+      hippogallery:description: Description for viognier-grapes-188185_640.jpg
+      hippogallery:filename: viognier-grapes-188185_640.jpg
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 60
+        hippogallery:width: 58
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/samples/viognier-grapes-188185_640.jpg/viognier-grapes-188185_640_thumbnail.jpg
+        jcr:lastModified: 2013-11-12T12:15:00+01:00
+        jcr:mimeType: image/jpeg
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 640
+        hippogallery:width: 625
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/samples/viognier-grapes-188185_640.jpg/viognier-grapes-188185_640_original.jpg
+        jcr:lastModified: 2013-11-12T12:15:00+01:00
+        jcr:mimeType: image/jpeg
+  /animal-2883_640.jpg:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 4709f797-61ae-4c36-93d4-63b5d50fc200
+    /animal-2883_640.jpg:
+      jcr:primaryType: hippogallery:imageset
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 773b909e-887c-4d25-a54e-0c8d9e22ba9c
+      hippo:availability: [live, preview]
+      hippogallery:description: Description for animal-2883_640.jpg
+      hippogallery:filename: animal-2883_640.jpg
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 39
+        hippogallery:width: 60
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/samples/animal-2883_640.jpg/animal-2883_640_thumbnail.jpg
+        jcr:lastModified: 2013-11-12T12:15:00+01:00
+        jcr:mimeType: image/jpeg
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 426
+        hippogallery:width: 640
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/samples/animal-2883_640.jpg/animal-2883_640_original.jpg
+        jcr:lastModified: 2013-11-12T12:15:00+01:00
+        jcr:mimeType: image/jpeg
+  /snail-193611_640.jpg:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 3c740fcf-8ec5-4f00-a713-ff96caa645c8
+    /snail-193611_640.jpg:
+      jcr:primaryType: hippogallery:imageset
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: a27aa6f1-574d-4690-b423-b56bb21402fd
+      hippo:availability: [live, preview]
+      hippogallery:description: Description for snail-193611_640.jpg
+      hippogallery:filename: snail-193611_640.jpg
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 45
+        hippogallery:width: 60
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/samples/snail-193611_640.jpg/snail-193611_640_thumbnail.jpg
+        jcr:lastModified: 2013-11-12T12:13:00+01:00
+        jcr:mimeType: image/jpeg
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 480
+        hippogallery:width: 640
+        jcr:data:
+          type: binary
+          resource: /content/gallery/myproject/samples/snail-193611_640.jpg/snail-193611_640_original.jpg
+        jcr:lastModified: 2013-11-12T12:13:00+01:00
+        jcr:mimeType: image/jpeg
